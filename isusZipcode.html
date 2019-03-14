@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>USZIPCODE</title>
+</head>
+<body>
+<button onclick="checkzipcodeus(prompt('Nhập số cần kiểm tra zipcode'))"> is_usZipcode</button>
+<script>
+    let regexpatt=/^[0-9]{5}(?:-[0-9]{4})?$/;
+    function checkzipcodeus(a) {
+       if (regexpatt.test(a)){alert("Yes")  }else {alert("No")}
+    }
+</script>
+</body>
+</html>
